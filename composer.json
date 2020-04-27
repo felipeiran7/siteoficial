@@ -1,0 +1,19 @@
+{
+    "name": "felipeiran7/siteoficial",
+    "authors": [
+        {
+            "name": "Felipe Iran",
+            "email": "felipeiran3@gmail.com"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"~6.1",
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Evolucao\\": "vendor\\cursoevolucao\\php-classes\\src"
+        }
+    }
+}
