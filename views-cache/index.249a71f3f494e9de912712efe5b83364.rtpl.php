@@ -138,36 +138,39 @@
                     <div class="col-12">
                         <div class="forms">
                             <h3>Cadastre-se para acessar as aulas</h3>
-                            <form action="#" method="post">
+                            <form action="/cadastro" method="post">
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                             <label for="cpf">CPF:</label>
-                                            <input type="text" class="form-control" id="cpf">
+                                            <input type="text" name="cpf" class="form-control" value="cpf">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                             <label for="Email">E-mail:</label>
-                                            <input type="email" class="form-control" id="email">
+                                            <input type="email" name="email" class="form-control" value="email">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                              <label for="senha">Senha:</label>
-                                            <input type="password" class="form-control" id="senha">
+                                            <input type="password" name="senha" class="form-control" value="senha">
                                         </div>
                                     </div>
 
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                              <label for="turma">Turma:</label>
-                                            <input type="text" class="form-control" id="turma" disabled="disabled">
+                                            <input type="text" name="turma" class="form-control" value="turma">
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <button class="btn clever-btn w-100">CADASTRAR</button>
                                     </div>
+
+                                    <div class="alerta error">Erro ao cadastrar ! CPF não consta como aluno Evolução ou E-mail inválido.</div>
+
                                 </div>
                             </form>
                         </div>

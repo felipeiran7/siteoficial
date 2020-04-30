@@ -127,9 +127,9 @@
                                                     </p>
           
                                                     <p class="link">
-                                                        Ainda não tem conta?
-                                                        <a href="#paracadastro">Cadastre-se</a>
-                                                    </p>
+                                                        Erro! login ou senha inválida
+                                                        <a href="#paracadastro">esqueci a senha</a>
+                                                    
                                                 </form>
                                             </div>
 

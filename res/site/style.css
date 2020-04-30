@@ -1411,6 +1411,22 @@ textarea:focus {
           .register-now .register-now-countdown .events-cd div span {
             font-size: 12px; } }
 
+.alerta {
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 10px;
+  font-size: 13px;
+}
+.error {
+  border-color: #e8273b;
+  color: #FFF;
+  background-color: #ed5565;
+}
+
+
+
+
 /* :: 10.0 Best Tutors Area */
 .single-tutors-slides {
   position: relative;
@@ -1986,7 +2002,7 @@ a.links{
 /* formatando o cabeçalho dos formulários */
 h1{
   font-size: 48px;
-  color: #066a75;
+  color: #3399ff;
   padding: 10px 0;
   font-family: Arial,sans-serif;
   font-weight: bold;
@@ -2049,7 +2065,7 @@ input:not([type="checkbox"]){
 input[type="submit"]{
   width: 100%!important;
   cursor: pointer;  
-  background: #3762f0;
+  background: #3399ff;
   padding: 8px 5px;
   color: #fff;
   font-size: 20px;  
@@ -2063,7 +2079,7 @@ input[type="submit"]{
   transition: all 0.2s linear;
 }
 input[type="submit"]:hover{
-  background: #4ab3c6;
+  background: #006699;
 }
 
 /*marcando os links para mudar de um formulário para outro */
@@ -2083,13 +2099,11 @@ input[type="submit"]:hover{
   border-radius: 0 0  5px 5px;
 }
 .link a {
-  font-weight: bold;
   background: #f7f8f1;
   padding: 3px 3px 10px 3px;
+  font-size: 10px;
   color: rgb(29, 162, 193);
   margin-left: 10px;
-  border: 1px solid #cbd518;
-
   -webkit-border-radius: 4px;
   border-radius: 4px;  
 
