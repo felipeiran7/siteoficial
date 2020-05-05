@@ -143,26 +143,26 @@
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                             <label for="cpf">CPF:</label>
-                                            <input type="text" name="cpf" class="form-control" value="cpf">
+                                            <input type="text" name="cpf" class="form-control" value="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                             <label for="Email">E-mail:</label>
-                                            <input type="email" name="email" class="form-control" value="email">
+                                            <input type="email" name="email" class="form-control" value="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                              <label for="senha">Senha:</label>
-                                            <input type="password" name="senha" class="form-control" value="senha">
+                                            <input type="password" name="senha" class="form-control" value="">
                                         </div>
                                     </div>
 
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
                                              <label for="turma">Turma:</label>
-                                            <input type="text" name="turma" class="form-control" value="turma">
+                                            <input type="text" name="turma" class="form-control" value="">
                                         </div>
                                     </div>
                                     <div class="col-12">

@@ -19,16 +19,61 @@ body {
  	left: 0%;
 	height: 99.6%;
     width: 76.65%;
-    pointer-events: none;
+
 }
 
 .chat{
-	position: absolute;
+	position: relative;
  	left: 1046px;
  	top: 107.9px;
 	height: 508px;
     width: 312px;
-    background: red;
+    background-color: black;
+    border: 1px  gray;
+}
+
+#caixa-rolante{
+	width: 312px;
+	height:400px;
+}
+
+#caixa-chat{
+	width: 100%;
+	height:400px;
+}
+
+#dados-chat{
+	position: relative;
+	width: 90%;
+	left: 2px;
+	padding: 7px;
+	line-height: 16px; 
+
+}
+
+#nome{
+	font-weight: bold;
+	font-family: 'Mukta Vaani', sans-serif;
+}
+
+#msg{
+
+	font-family: 'Mukta Vaani', sans-serif;
+}
+
+
+input[type='submit']{
+	margin-top: 9px;
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+}
+
+textarea{
+	position: relative;
+	top: 15px;
+	width: 98%;
+	height: 50px;
 }
 
 .menu{

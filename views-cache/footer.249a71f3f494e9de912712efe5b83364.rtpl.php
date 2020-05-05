@@ -22,7 +22,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <div class="bottom-footer-area d-flex justify-content-between align-items-center">
             <!-- Contact Info -->
             <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+                <a href="/admin">Acesso Administrador</a>
                 <a href="#"><span>Email:</span> info@clever.com</a>
             </div>
             <!-- Follow Us -->
