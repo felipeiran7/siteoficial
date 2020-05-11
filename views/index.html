@@ -138,7 +138,7 @@
                     <div class="col-12">
                         <div class="forms">
                             <h3>Cadastre-se para acessar as aulas</h3>
-                            <form action="/cadastro" method="post">
+                            <form action="/cadastro/aluno" method="post">
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
                                         <div class="form-group">
@@ -159,12 +159,6 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-lg-6">
-                                        <div class="form-group">
-                                             <label for="turma">Turma:</label>
-                                            <input type="text" name="turma" class="form-control" value="">
-                                        </div>
-                                    </div>
                                     <div class="col-12">
                                         <button class="btn clever-btn w-100">CADASTRAR</button>
                                     </div>

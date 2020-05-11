@@ -39,7 +39,7 @@
                     </div>
                   </div>
 
-                  <form method="POST" action="/chat/enviar">
+                  <form method="POST" action="/aula">
                     <textarea name="mensagem" placeholder="insira uma mensagem"></textarea>
                   <input type="submit" name="enviar" value="Enviar">
                   </form>

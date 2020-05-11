@@ -14,17 +14,6 @@ use \Evolucao\Model;
   	const SESSION= "User";
 
 
-  	public function insert($data=array()){
-  		$sql=  new Sql();
-  		$result= $sql->select("INSERT INTO tb_admin (cpf,nome,email,senha,stat) VALUES (:cpf,:nome,:email,:senha,:stat)", array(
-  			":cpf"=>$data["cpf"],
-  			":nome"=>"exemplo teste",
-  			":email"=>$data["email"],
-  			":senha"=>$data["senha"],
-  			":stat"=>true
-  		));
-  	}
-
   
 
   	public function Login($login, $password){

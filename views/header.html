@@ -105,11 +105,11 @@
                                             <!--FORMULÁRIO DE LOGIN-->
 
                                             <div id="login">
-                                                <form method="post" action=""> 
+                                                <form method="post" action="/usuario/login"> 
                                                     <h1>Login</h1> 
                                                     <p> 
                                                         <label for="email_login">Seu e-mail ou CPF</label>
-                                                        <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
+                                                        <input id="email_login" name="login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
                                                     </p>
           
                                                     <p> 
@@ -128,8 +128,8 @@
           
                                                     <p class="link">
                                                         Erro! login ou senha inválida
-                                                        <a href="#paracadastro">esqueci a senha</a>
-                                                    
+                                                        <a href="/usuario/forgot">esqueci a senha</a>
+                                                    </p>
                                                 </form>
                                             </div>
 
