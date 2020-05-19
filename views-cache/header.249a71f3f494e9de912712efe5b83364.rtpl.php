@@ -1,148 +1,59 @@
 <?php if(!class_exists('Rain\Tpl')){exit;}?><!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Title -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso Evolução</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="/res/site/img/core-img/favicon.ico">
-
-    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/res/site/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/res/site/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/res/site/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="spinner"></div>
-    </div>
-
-    <!-- ##### Header Area Start ##### -->
-    <header class="header-area">
-
-       
-
-        <!-- Top Header Area -->
-        <div class="top-header-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
+    
+        <header>
+            <div class="top-header-area d-flex justify-content-between align-items-center">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <a href="/admin"><i class="fa fa-user"></i> Acesso Administrador</a>
+                    <a href="#"><span>Email:</span> info@clever.com</a>
+                </div>
+                <!-- Follow Us -->
+                <div class="follow-us">
+                    <span>Siga-nos:</span>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
             </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
 
-        <!-- Navbar Area -->
-        <div class="clever-main-menu">
-            <div class="classy-nav-container breakpoint-off">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="cleverNav">
+            <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+                <a href="#" class="navbar-brand">
+                    <img src="/res/site/img/logo2.png" alt="Logo"></a>
+                               
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <!-- Logo -->
-                    <a class="nav-brand" href="index.html"><img src="/res/site/img/core-img/logo.png" alt=""></a>
+                
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav mr-auto ml-auto" id="menu-items">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Turmas</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Quem somos</a>    
+                        </li>
+                    </ul>
 
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
-                    <!-- Menu -->
-                    <div class="classy-menu">
-
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#">Pages</a>
-                                    <ul class="dropdown">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="courses.html">Courses</a></li>
-                                        <li><a href="single-course.html">Single Courses</a></li>
-                                        <li><a href="instructors.html">Instructors</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Single Blog</a></li>
-                                        <li><a href="regular-page.html">Regular Page</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="courses.html">Courses</a></li>
-                                <li><a href="instructors.html">Instructors</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-
-                            <!-- Search Button -->
-                      
-                            <!-- Register / Login -->
-
-                            <div class="register-login-area">
-                                <a href="#session_cad" class="btn" id="cadastrobtn">Cadastre-se</a>
-                                <a href="#" class="fazer-login">Login</a>
-                                <div id="login-container" style="display:none">
-                                    <a class="links" id="paracadastro"></a>
-                                        <a class="links" id="paralogin"></a>
-                                        <div class="content">      
-                                            <!--FORMULÁRIO DE LOGIN-->
-
-                                            <div id="login">
-                                                <form method="post" action="/usuario/login"> 
-                                                    <h1>Login</h1> 
-                                                    <p> 
-                                                        <label for="email_login">Seu e-mail ou CPF</label>
-                                                        <input id="email_login" name="login" required="required" type="text" placeholder="contato@htmlecsspro.com"/>
-                                                    </p>
-          
-                                                    <p> 
-                                                        <label for="senha_login">Sua senha</label>
-                                                        <input id="senha_login" name="senha_login" required="required" type="password" placeholder="1234" /> 
-                                                    </p>
-          
-                                                    <p> 
-                                                        <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-                                                        <label for="manterlogado">Manter-me logado</label>
-                                                    </p>
-          
-                                                    <p> 
-                                                        <input type="submit" value="Logar" /> 
-                                                    </p>
-          
-                                                    <p class="link">
-                                                        Erro! login ou senha inválida
-                                                        <a href="/usuario/forgot">esqueci a senha</a>
-                                                    </p>
-                                                </form>
-                                            </div>
-
-                                            <!--FORMULÁRIO DE CADASTRO-->
-                                            
-                                        </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
+                    <button type="button" data-toggle="modal" data-target="#cadastro-tela" class="btn btn-outline-light mr-1">Cadastre-se</button>
+                    <button type="button" data-toggle="modal" data-target="#login-tela"
+                    class="btn btn-info my-2 my-sm-0" id="btn-login">Fazer Login</button>
+                </div>
+            </nav>
+            
+        </header>
