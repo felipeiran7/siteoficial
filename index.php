@@ -2,6 +2,8 @@
 
 session_start();
 require_once("vendor/autoload.php");
+require_once("functions.php");
+
 
 use \Slim\Slim;
 use \Evolucao\Page;
@@ -9,7 +11,7 @@ use \Evolucao\Model\Admin;
 use \Evolucao\Model\Aluno;
 use \Evolucao\Model\Usuario;
 use \Evolucao\PageAdmin;
-use \Evolucao\Chat;
+use \Evolucao\Model\Chat;
 
 $app = new Slim();
 
@@ -17,20 +19,49 @@ $app->config('debug', true);
 
 $app->get('/', function() {
 	$page= new Page();
-	$page->setTpl("inicial");
+	$page->setTpl("inicial", ["error"=>'']);
+});
+
+
+
+
+
+$app->get('/cadastro/aluno', function(){
+	$user= new Usuario();
+	$user->setData($_POST);
+	try{
+		$user->insert($_POST);
+		header("Location: /");
+	}catch(Exception $e){
+		$page= new Page();
+		$error= $e->getMessage();
+		$page->setTpl("inicial", ["error"=>$error]);
+	}
+	exit;
+
 });
 
 $app->post('/cadastro/aluno', function(){
 	$user= new Usuario();
 	$user->setData($_POST);
-	$user->insert($_POST);
+	try{
+		$user->insert($_POST);
+		Usuario::login($_POST["cpf"],$_POST["senha"]);
+		header("Location: /");
+	}catch(Exception $e){
+		$page= new Page();
+		$error= $e->getMessage();
+		$page->setTpl("inicial", ["error"=>$error]);
+	}
+	exit;
 
 });
 
 $app->get('/admin', function(){
 	Admin::verifyLogin();
+	//var_dump($_SESSION["User"]["nome"]);
 	$page= new PageAdmin();
-	$page->setTpl("index");
+	$page->setTpl("index",array("name"=>$_SESSION["User"]["nome"]));
 	exit;
 });
 
@@ -56,12 +87,30 @@ $app->post('/admin/login', function(){
 });
 
 
-// LOGIN DO USUARIO DO SITE
+//LOGIN DO USUARIO DO SITE
 $app->post('/usuario/login', function(){
+	
+	try{
 	$user = new Usuario();
-	$user->login($_POST["login"],$_POST["senha_login"]);
+		$user->login($_POST["login"],$_POST["senha_login"]);
+		header("Location: /");
+	}catch(Exception $e){
+		Usuario::setError($e->getMessage());
+		$page= new Page();
+		$error= $e->getMessage();
+		$page->setTpl("inicial", ["error"=>$error]);
+
+	}
 	exit;
 
+}); 
+
+
+
+$app->get('/usuario/logout', function(){
+	Usuario::logout();
+	header("Location: /");
+	exit;
 });
 //==============================================================
 
@@ -215,16 +264,21 @@ $app->post("/admin/alunos/:cpf", function($cpf){
 
 
 $app->post('/aula', function(){
-	$msg= new Chat();
-	$result= $msg->sent("Nome Alguem",$_POST["mensagem"]);
-	header("Location: /aula");
-	exit;
-
+	if(isset($_POST['enviar'])){
+		$sql = new Chat();
+		$sql->insert($_POST['nome'],$_POST['mensagem']);
+		header("Location: /aula");
+	}
 });
 
 $app->get('/aula', function(){
-	$page= new Page(["header"=>false, "footer"=>false]);
-	$page->setTpl("aula");
+	if(Usuario::checkLogin()){
+		$page= new Page();
+		$page->setTpl("aula");
+	}else{
+		header("Location: /");
+	}
+	
 });
 
 $app->run();

@@ -5,6 +5,7 @@ use \Evolucao\DB\Sql;
 use \Evolucao\Model;
 use \Evolucao\Mailer;
 
+
 /**
  * 
  */
@@ -13,6 +14,7 @@ class Usuario extends Model
 	protected $nome;
 	protected $cpf;
 	protected $email;
+	protected $instagram;
 	protected $turma;
 	protected $unidade;
 	protected $senha;
@@ -20,6 +22,7 @@ class Usuario extends Model
 	const SESSION= "User";
 	const SECRET = "Usuario_Secret_C";
 	const SECRET_IV = "Usuario_Secret_I";
+	const ERROR= "UserError";
 
 	 	public function insert($usuario= array()){
 	  		$sql=  new Sql();
@@ -40,10 +43,11 @@ class Usuario extends Model
 	  			if(count($result2)>0){
 	  				throw new \Exception("CPF informado já está cadastrado como usuário");	
 	  			}else if(count($result2)===0){
-	  					$result3= $sql->select("CALL save_return_usuario(:nome,:cpf,:email,:turma,:unidade,:senha)", array(
+	  					$result3= $sql->select("CALL save_return_usuario(:nome,:cpf,:email,:instagram,:turma,:unidade,:senha)", array(
   							":nome"=>$dados["nome"],
   							":cpf"=>$this->getcpf(),
   							":email"=>$this->getemail(),
+  							":instagram"=>$this->getinstagram(),
   							":turma"=>$dados["turma"],
   							":unidade"=>$dados["unidade"],
   							":senha"=>$this->getsenha(),
@@ -68,12 +72,43 @@ class Usuario extends Model
 			     $usuario = new Usuario();
 			     $usuario-> setData($dados);
 			     $_SESSION[Usuario::SESSION]= $usuario->getValues();
-			     echo "usuario fez login msm";
 			     return $usuario;
 		    }else{
 			   throw new \Exception("Usuario inexistente ou senha inválida");
 		    }
 	  	}
+
+
+	    public static function verifyLogin(){
+
+	      if(!isset($_SESSION[Usuario::SESSION]) ||
+	        !$_SESSION[Usuario::SESSION]){
+	         throw new \Exception("Você precisa fazer login para acessar essa página");
+	         exit;
+	      }
+
+	    }
+
+
+		public static function checkLogin()
+		{
+
+			if (!isset($_SESSION[Usuario::SESSION])|| !$_SESSION[Usuario::SESSION]
+			) {
+				//Não está logado
+				$_SESSION[Usuario::ERROR]= NULL;
+				return false;
+			}else{
+				return true;
+			}
+		}
+
+
+	  	public static function logout(){
+      		$_SESSION[Usuario::SESSION]= NULL;
+      		session_destroy();
+   	    }
+
 
 	  	public static function getForgot($email){
 	  		$sql= new Sql();
@@ -130,6 +165,20 @@ class Usuario extends Model
 
 	  	}
 
+	  	
+		public static function getFromSession(){
+
+				$user = new Usuario();
+
+				if (isset($_SESSION[Usuario::SESSION]) && $_SESSION[Usuario::SESSION]['cpf'] != '') {
+
+					$user->setData($_SESSION[Usuario::SESSION]);
+
+				}
+
+				return $user;
+
+		}
 
   		public static function setForgotUsed($idrecovery){
   			$sql= new Sql();
@@ -155,6 +204,79 @@ class Usuario extends Model
   			$sql= new Sql();
   			return $sql->select("SELECT *FROM tb_usuarios ORDER BY nome");
   		}
+
+  		public static function setError($msg){
+
+			$_SESSION[Usuario::ERROR] = $msg;
+
+		}
+
+	public static function getError(){
+
+		$msg = (isset($_SESSION[Usuario::ERROR]) && $_SESSION[Usuario::ERROR]) ? $_SESSION[Usuario::ERROR] : '';
+
+		Usuario::clearError();
+
+		return $msg;
+
+	}
+
+	public static function clearError()
+	{
+
+		$_SESSION[Usuario::ERROR] = NULL;
+
+	}
+
+	public static function setSuccess($msg)
+	{
+
+		$_SESSION[Usuario::SUCCESS] = $msg;
+
+	}
+
+	public static function getSuccess()
+	{
+
+		$msg = (isset($_SESSION[Usuario::SUCCESS]) && $_SESSION[Usuario::SUCCESS]) ? $_SESSION[Usuario::SUCCESS] : '';
+
+		Usuario::clearSuccess();
+
+		return $msg;
+
+	}
+
+	public static function clearSuccess()
+	{
+
+		$_SESSION[Usuario::SUCCESS] = NULL;
+
+	}
+
+	public static function setErrorRegister($msg)
+	{
+
+		$_SESSION[Usuario::ERROR_REGISTER] = $msg;
+
+	}
+
+	public static function getErrorRegister()
+	{
+
+		$msg = (isset($_SESSION[Usuario::ERROR_REGISTER]) && $_SESSION[Usuario::ERROR_REGISTER]) ? $_SESSION[Usuario::ERROR_REGISTER] : '';
+
+		Usuario::clearErrorRegister();
+
+		return $msg;
+
+	}
+
+	public static function clearErrorRegister()
+	{
+
+		$_SESSION[Usuario::ERROR_REGISTER] = NULL;
+
+	}
 }
 
 

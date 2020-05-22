@@ -1,10 +1,27 @@
+:root{
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+  html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
 body{
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
     background-color: #ffffff;
 }
 
 h11 {
   color:red;
 }
+
+
+
 
 .top-header-area {
     position: relative;
@@ -131,8 +148,24 @@ color: rgb(139, 139, 139);}
         font-size: 24px; } }
   .section-heading.text-left {
     text-align: left !important; }
-  .section-heading.white h3 {
-    color: #ffffff; }
+  .section-heading h3 {
+    color: #000; }
+
+.heading-section.heading-section-white h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.heading-section.heading-section-white p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.heading-section h2 {
+    font-size: 44px;
+    font-weight: 600;
+}
+
 
   
   
@@ -307,7 +340,273 @@ color: rgb(139, 139, 139);}
         text-transform: uppercase; }
       .bottom-footer-area .follow-us a:hover, .bottom-footer-area .follow-us a:focus {
         color: #ffffff; }
-  
+
+
+.ftco-services {
+  padding: 0 0 0 0; }
+  .ftco-services .services {
+    display: block;
+    width: 100%;
+    position: relative;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .ftco-services .services .icon {
+      line-height: 1.3;
+      position: relative;
+      margin: 0 auto;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+      .ftco-services .services .icon span {
+        font-size: 50px;
+        color: #fff; }
+    .ftco-services .services .media-body {
+      color: rgba(255, 255, 255, 0.8); }
+      @media (max-width: 767.98px) {
+        .ftco-services .services .media-body {
+          padding-bottom: 1.5em !important; } }
+      .ftco-services .services .media-body h3 {
+        font-weight: 500;
+        font-size: 22px;
+        color: #fff; }
+
+
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ftco-no-pt {
+    padding-top: 0;
+}
+
+.wrap-about {
+    position: relative;
+}
+
+.wrap-about .img {
+    width: 100%;
+}
+
+.services-2 {
+    margin-bottom: 30px;
+}
+.services-2 .icon {
+    line-height: 1;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #0000;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+.ftco-section {
+  padding: 7em 0;
+  position: relative; }
+
+
+
+
+#section-counter {
+  position: relative;
+  z-index: 0; }
+  #section-counter:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    opacity: .8;
+    background: #0d1128;
+    background: #0d1128;
+    background: -moz-linear-gradient(45deg, #0d1128 0%, #0a7dff 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #0d1128), color-stop(100%, #0a7dff));
+    background: -webkit-linear-gradient(45deg, #0d1128 0%, #0a7dff 100%);
+    background: -o-linear-gradient(45deg, #0d1128 0%, #0a7dff 100%);
+    background: -ms-linear-gradient(45deg, #0d1128 0%, #0a7dff 100%);
+    background: linear-gradient(45deg, #0d1128 0%, #0a7dff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d1128', endColorstr='#0a7dff', GradientType=1 ); }
+
+@media (max-width: 1199.98px)
+.ftco-counter {
+    background-position: top center !important;
+}
+
+.ftco-counter {
+  overflow-x: hidden;
+  position: relative; }
+  @media (max-width: 1199.98px) {
+    .ftco-counter {
+      background-position: top center !important; } }
+  .ftco-counter .img-video {
+    width: 100%;
+    display: block; }
+    @media (max-width: 767.98px) {
+      .ftco-counter .img-video {
+        height: 300px; } }
+  .ftco-counter .icon span {
+    font-size: 50px;
+    color: #000000;
+    line-height: 1; }
+  .ftco-counter .block-18 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px; }
+  .ftco-counter .text strong.number {
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+    display: block; }
+  .ftco-counter .text span {
+    display: block;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8); }
+  @media (max-width: 767.98px) {
+    .ftco-counter .counter-wrap {
+      margin-bottom: 20px; } }
+
+.ftco-consult {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative; }
+  @media (max-width: 991.98px) {
+    .ftco-consult {
+      background-position: top center !important; } }
+  .ftco-consult .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .7;
+    background: #fd6100;
+    background: -moz-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #fd6100), color-stop(100%, #0d1128));
+    background: -webkit-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    background: -o-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    background: -ms-linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    background: linear-gradient(45deg, #fd6100 0%, #0d1128 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd6100', endColorstr='#0d1128', GradientType=1 ); }
+
+
+
+.
+.user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.aulas > .col,
+.aulas > [class^=col-]{
+    padding-top: .65rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 100vh;
+}
+
+
+h2::after {
+  content: "";
+  width: 100px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #0098fd;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+#myCarousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+#myCarousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 290px;
+}
+#myCarousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+#myCarousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+#myCarousel.testimonial {
+  padding: 30px 0 10px;
+}
+#myCarousel .overview { 
+  font-style: italic;
+}
+#myCarousel .overview b {
+  text-transform: uppercase;
+  color: rgb(0, 132, 255);
+}
+.carousel-control {
+  width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+  background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+  line-height: 42px;
+    position: absolute;
+    display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+#myCarousel .carousel-indicators {
+  bottom: -40px;
+}
+#myCarousel .carousel-indicators li, #myCarousel .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  border-radius: 50%;
+}
+#myCarousel .carousel-indicators li { 
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+#myCarousel .carousel-indicators li.active {  
+  background: #555;   
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
 @media (min-width: 576px) {
   
 
@@ -327,3 +626,7 @@ color: rgb(139, 139, 139);}
 @media (min-width: 1200px) { 
     
  }
+
+
+
+

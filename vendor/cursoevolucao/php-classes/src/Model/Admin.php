@@ -42,7 +42,6 @@ use \Evolucao\Model;
 
       if(!isset($_SESSION[Admin::SESSION]) ||
         !$_SESSION[Admin::SESSION] ||
-        !(int)$_SESSION[Admin::SESSION]["id"]>0 ||
         (int)$_SESSION[Admin::SESSION]["stat"] !== $inadmin){
          header("Location: /admin/login");
          exit;
