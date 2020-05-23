@@ -11,7 +11,7 @@
                         </div>
                         <!-- Copywrite -->
                         <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Feito Por studio 7ONLINE<i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://instagram.com/7on.line" target="_blank">7online</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
@@ -22,14 +22,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <div class="bottom-footer-area d-flex justify-content-between align-items-center">
             <!-- Contact Info -->
             <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
+                <a href="#"><span>Renascença: </span>(98) 3227-1351</a>
+                <a href="#"><span>Cohama: </span>(98) 3236-0782</a>
+                <a href="#"><span>Cohab: </span>(98) 3225-0538</a>
             </div>
             <!-- Follow Us -->
             <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <span>Siga-nos</span>
+                <a href="https://www.facebook.com/curso.evolucao"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
         </div>

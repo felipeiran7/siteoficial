@@ -32,7 +32,6 @@
                 <!-- Contact Info -->
                 <div class="contact-info">
                     <a href="/admin"><i class="fa fa-user"></i> Acesso Administrador</a>
-                    <a href="#"><span>Email:</span> info@clever.com</a>
                 </div>
                 <!-- Follow Us -->
                 <div class="follow-us">
