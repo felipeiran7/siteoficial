@@ -509,12 +509,7 @@ color: rgb(139, 139, 139);}
     background-position: center center;
 }
 
-.aulas > .col,
-.aulas > [class^=col-]{
-    padding-top: .65rem;
-   border: 1px solid rgba(243,117,32, .2);
-   height: 100vh;
-}
+
 
 
 h2::after {
@@ -608,23 +603,58 @@ h2::after {
 
 
 @media (min-width: 576px) {
-  
+ .aulas > .col,
+.aulas > [class^=col-]{
+    padding-top: .165rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 30vh;
+}
 
 }
 
 
 @media (min-width: 768px) { 
-   
+.aulas > .corpo-frame,{
+    padding-top: .65rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 40vh;
+}
+
+.aulas > .body-chat,{
+    padding-top: .65rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 20vh;
+}
+
+
 }
 
 
 @media (min-width: 992px) { 
-    
+    .aulas > .col,
+.aulas > [class^=col-]{
+    padding-top: .65rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 100vh;
+}
  }
 
-
 @media (min-width: 1200px) { 
-    
+    .aulas > .col,
+.aulas > [class^=col-]{
+    padding-top: .65rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 100vh;
+}
+ }
+
+@media (min-width: 1024px) { 
+    .aulas > .col,
+.aulas > [class^=col-]{
+    padding-top: .65rem;
+   border: 1px solid rgba(243,117,32, .2);
+   height: 100vh;
+}
  }
 
 

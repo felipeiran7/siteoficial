@@ -10,6 +10,7 @@ use \Evolucao\Page;
 use \Evolucao\Model\Admin;
 use \Evolucao\Model\Aluno;
 use \Evolucao\Model\Usuario;
+use \Evolucao\Model\Aula;
 use \Evolucao\PageAdmin;
 use \Evolucao\Model\Chat;
 
@@ -59,7 +60,6 @@ $app->post('/cadastro/aluno', function(){
 
 $app->get('/admin', function(){
 	Admin::verifyLogin();
-	//var_dump($_SESSION["User"]["nome"]);
 	$page= new PageAdmin();
 	$page->setTpl("index",array("name"=>$_SESSION["User"]["nome"]));
 	exit;
@@ -71,6 +71,7 @@ $app->get('/admin/login', function(){
 	exit;
 
 });
+
 
 $app->get('/admin/logout', function(){
 	Admin::logout();
@@ -280,6 +281,55 @@ $app->get('/aula', function(){
 	}
 	
 });
+
+
+
+
+$app->get('/admin/cadastro/aula/turmamed', function(){
+	Admin::verifyLogin();
+	$aula= Aula::listAll("medicina");
+	$page= new PageAdmin();
+	$page->setTpl("aulas-med", array(
+		"turma"=>$aula[0]["turma"], "link"=>$aula[0]["link"]
+	));
+	exit;
+});
+
+$app->get("/admin/aula/medicina/editar/:turma", function($turma){
+	Admin::verifyLogin();
+	$aula= new Aula();
+	$aula->get($turma);
+	$dados=$aula->getValues();
+	$page= new PageAdmin();
+	$page->setTpl("aulas-med-update",array(
+		"link"=>$dados["link"]));
+	exit;
+});
+
+
+$app->post("/admin/aula/medicina/editar", function(){
+	Admin::verifyLogin();
+	$aula= new Aula();
+	$aula->atualiza("medicina", $_POST["link"]);
+
+	header("Location: /admin/cadastro/aula/turmamed");
+	exit;
+});
+
+$app->get("/admin/aula/medicina/delete", function(){
+	Admin::verifyLogin();
+	$aula= new Aula();
+	$aula->encerra("medicina","encerrado");
+	header("Location: /admin/cadastro/aula/turmamed");
+	exit;
+
+
+});
+
+
+
+
+
 
 $app->run();
 

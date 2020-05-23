@@ -35,6 +35,10 @@ input[type='text']{
 	border-radius:5px;
 }
 
+#cad-msg{
+	width: 100%;
+}
+
 
 input[type='submit']{
 	width:100%;
