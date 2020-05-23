@@ -33,7 +33,7 @@ use Rain\Tpl;
 			$this->setData($this->options["data"]);
 
 
-			if($this->options["header"]==true) $this->setTpl("header",array("nomeAdmin"=>$_SESSION["User"]["nome"]));
+			if($this->options["header"]==true) $this->setTpl("header");
 
 
 		}
