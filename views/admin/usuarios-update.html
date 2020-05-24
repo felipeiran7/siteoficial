@@ -18,7 +18,7 @@
         </div>
         <!-- /.box-header -->
         <!-- form start -->
-        <form role="form" action="/admin/alunos/{$aluno.cpf}" method="post">
+        <form role="form" action="/admin/usuarios/{$aluno.cpf}" method="post">
           <div class="box-body">
             <div class="form-group">
               <label for="nome">Nome</label>
@@ -29,12 +29,32 @@
               <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Informe o cpf"  value="{$aluno.cpf}">
             </div>
             <div class="form-group">
+              <label for="cpf">Email:</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Informe o email"  value="{$aluno.email}">
+            </div>
+            <div class="form-group">
+              <label for="instagram">Instagram</label>
+              <input type="text" class="form-control" id="instagram" name="instagram" placeholder="Instagram"  value="{$aluno.instagram}">
+            </div>
+            <div class="form-group">
               <label for="turma">Turma</label>
               <input type="text" class="form-control" id="turma" name="turma" placeholder="Informe a turma"  value="{$aluno.turma}">
             </div>
             <div class="form-group">
               <label for="unidade">Unidade</label>
               <input type="text" class="form-control" id="unidade" name="unidade" placeholder="Informe a unidade" value="{$aluno.unidade}">
+            </div>
+            <div class="form-group">
+              <label for="turmaextra">Turma Extra</label>
+              <input type="text" class="form-control" id="turmaextra" name="turmaextra" placeholder="Acesso Extra" value="{$aluno.turmaextra}">
+            </div>
+            <div class="form-group">
+              <label for="pago">Pago</label>
+              <input type="text" class="form-control" id="pago" name="pago" placeholder="Aluno em dias" value="{$aluno.pago}">
+            </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="text" class="form-control" id="senha" name="senha" placeholder="senha" value="{$aluno.senha}">
             </div>
           </div>
           <!-- /.box-body -->

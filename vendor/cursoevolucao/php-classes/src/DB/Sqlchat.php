@@ -1,8 +1,8 @@
-<?php 
+<?php
 
-namespace 	Evolucao\chat;
+namespace 	Evolucao\DB;
 
-class SqlChat {
+class Sqlchat {
 
 	const HOSTNAME = "127.0.0.1";
 	const USERNAME = "root";
@@ -15,9 +15,9 @@ class SqlChat {
 	{
 
 		$this->conn = new \PDO(
-			"mysql:dbname=".SqlChat::DBNAME.";host=".SqlChat::HOSTNAME, 
-			SqlChat::USERNAME,
-			SqlChat::PASSWORD
+			"mysql:dbname=".Sql::DBNAME.";host=".Sql::HOSTNAME, 
+			Sql::USERNAME,
+			Sql::PASSWORD
 		);
 
 	}
@@ -66,4 +66,4 @@ class SqlChat {
 
 }
 
- ?>
+?>

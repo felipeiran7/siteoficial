@@ -1,9 +1,12 @@
 <?php 
 include "db.php";
+require_once("vendor/autoload.php");
+use Evolucao\DB\Sql;
 session_start();
 
-$_SESSION["Aula"]= "link";
-var_dump($_SESSION);
+
+$_SESSION["Aula"]= '';
+
  ?>
 
 
@@ -86,30 +89,28 @@ var_dump($_SESSION);
 <!--ESTE ONLOAD AJAX É PARA ASSIM QUE A PÁGINA ABRIR ELE JÁ CARERGAR AS INFORMAÇÕES, SEM TER QUE ESPERAR 1 SEGUNDO PARA ISSO -->
 
 <body onload="ajax();" onLoad="scroll();">
-	<?php if(!isset($_SESSION["User"]) ||
-	        !$_SESSION["User"]): ?>
-	<p>voce precisa ta logado para ve isso</p>
-
+	<?php if(!isset($_SESSION["User"]) || !$_SESSION["User"]): ?>
+				<p>voce precisa ta logado para ve isso</p>
 	<?php else: ?>
 
+		<?php
+            //ATUALIZA SESSÃO DO USUARIO SE FIZER ALTERACOES NO BANCO
+			$sql= new Sql();
+            $result= $sql->select("SELECT *FROM tb_usuarios WHERE cpf=:cpf", array(":cpf"=>$_SESSION["User"]["cpf"]));
+            $dados= $result[0];
+            $_SESSION["User"]= $dados;
+            
+            $sql->query("UPDATE tb_usuarios SET stats=:stats,in_aula=:in_aula WHERE cpf=:cpf", array("stats"=>"online","in_aula"=>"YES","cpf"=>$_SESSION["User"]["cpf"]));
+            //===========================================================================================
 
-		<!---<?php //echo var_dump($_SESSION); ?>  -->
-
-		 <header>
-            <div class="top-header-area d-flex justify-content-between align-items-center">
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <a href="/admin"><i class="fa fa-user"></i> Acesso Administrador</a>
-                    <a href="#"><span>Email:</span> info@clever.com</a>
-                </div>
-                <!-- Follow Us -->
-                <div class="follow-us">
-                    <span>Siga-nos:</span>
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </div>
-            </div>
+			$aulas = $sql->select("SELECT *FROM aulas");
+			$_SESSION["Aula"]= $aulas;
+			$aulamed= $_SESSION["Aula"][0];
+			$aulacfo= $_SESSION["Aula"][1];
+			$aulaextra= $_SESSION["Aula"][2];
+		?>
+        <!-- CARREGANDO HEADER -->
+        <header>
 
             <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
                 <a href="/" class="navbar-brand">
@@ -150,107 +151,224 @@ var_dump($_SESSION);
                     </div>                
                 </div>
             </nav>
+        </header>
+            <!--FIM CARREGA HEADER -->
 
+    <?php if($_SESSION["User"]["pago"]=="1"): ?>
+            <?php if($_SESSION["User"]["turma"]== $aulamed["turma"]): ?>
+                    
+                    <?php if($aulamed["link"]=="encerrado"): ?>
+                        <?php if($aulaextra["link"]=="encerrado"): ?>
 
+                            <div class="alert alert-warning" role="alert">
+                            Opa Parece que não temos aula por aqui no momento volte mais tarde!</div>
+                        <?php else: ?>
+                             <!----- CARREGA PAGINA E CHAT AULA EXTRA---->
+                                <div class="container-fluid ">
+                                    <div class="aulas row d-flex ">
+                                        <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
+                                            <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
+                                                <iframe class="embed-responsive-item" src=<?php echo $aulaextra["link"]?>></iframe>
+                                            </div>
+                                        </div>
+                                        <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
+                                            <div class="row">
+                                                <div class="alert alert-primary col-12 mt-auto" role="alert">
+                                                Utilize o chat para <strong>Perguntas</strong>
+                                                </div>
+                                            </div>
 
-		<div class="container-fluid ">
-                    <div class="aulas row d-flex ">
-                      <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
-						<div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
-						  <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=UmzIDEmvGXE?&autoplay=1&controls=0&showinfo=0&modestbranding=0"></iframe>
-						</div>
-					  </div>
-                          <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
-                              <div class="row">
-                                
-                                <div class="alert alert-primary col-12 mt-auto" role="alert">
- 									Utilize o chat para <strong>Perguntas</strong>
-								</div>
+                                            <div class="row chat" id="row-chat">
+                                                <div id="caixa-chat" style="overflow-y:scroll; width:100%;">
+                                                    <div id="chat">
+                                                    <!-- LOCAL ONDE VAI CHAMAR O CHAT -->
+                                                    </div>
+                                                </div>
 
-                              </div>
-                                  <div class="row chat" id="row-chat">
-                                    <div id="caixa-chat" style="overflow-y:scroll; width:100%;">
+                                                <div style="margin-top: 10px;">
+                                                    <input type="text" id="nome" name="nome" value="<?php echo $_SESSION["User"]["nome"]; ?>" disabled="">
+                                                    <textarea maxlength="100" id="mensagem" name="mensagem" placeholder="Insira uma mensagem"></textarea>
+                                                    <button id="cad-msg" type="button" class="btn btn-primary">Enviar Pergunta</button>
+                                                </div>
+                                            </div>               
+                                        </div>
+                                    </div>
+                                </div>
+
+                        <?php endif; ?>
+
+                    <?php else: ?>
+                        <!----- CARREGA PAGINA E CHAT AULA MEDICINA ---->
+                        <div class="container-fluid ">
+                            <div class="aulas row d-flex ">
+                                <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
+                                    <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
+                                        <iframe class="embed-responsive-item" src=<?php echo $aulamed["link"]?>></iframe>
+                                    </div>
+                                </div>
+                                <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
+                                    <div class="row">
+                                        <div class="alert alert-primary col-12 mt-auto" role="alert">
+                                        Utilize o chat para <strong>Perguntas</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row chat" id="row-chat">
+                                        <div id="caixa-chat" style="overflow-y:scroll; width:100%;">
                                             <div id="chat">
                                             <!-- LOCAL ONDE VAI CHAMAR O CHAT -->
                                             </div>
-                                    </div>
+                                        </div>
 
-                                    <div style="margin-top: 10px;">
-                                        <input type="text" id="nome" name="nome" value="<?php echo $_SESSION["User"]["nome"]; ?>" disabled="">
-                                        <textarea maxlength="100" id="mensagem" name="mensagem" placeholder="Insira uma mensagem"></textarea>
-                                         <button id="cad-msg" type="button" class="btn btn-primary">Enviar Pergunta</button>                  
-                                    </div>
-                                  </div>
-                       
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-        
-
-
-
-
-
-
-
-
-		 <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area">
-        <!-- Top Footer Area -->
-        <div class="top-footer-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Footer Logo -->
-                        <div class="footer-logo">
-                            <a href="index.html"><img src="/res/site/img/logo-footer.png" alt=""></a>
+                                        <div style="margin-top: 10px;">
+                                            <input type="text" id="nome" name="nome" value="<?php echo $_SESSION["User"]["nome"]; ?>" disabled="">
+                                            <textarea maxlength="100" id="mensagem" name="mensagem" placeholder="Insira uma mensagem"></textarea>
+                                            <button id="cad-msg" type="button" class="btn btn-primary">Enviar Pergunta</button>
+                                        </div>
+                                    </div>               
+                                </div>
+                            </div>
                         </div>
-                        <!-- Copywrite -->
-                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    
+                    <?php endif; ?>
+
+            <?php elseif($_SESSION["User"]["turma"]== $aulacfo["turma"]): ?>
+                        <?php if($aulacfo["link"]=="encerrado"): ?>
+                        <?php if($aulaextra["link"]=="encerrado"): ?>
+
+                            <div class="alert alert-warning" role="alert">
+                            Opa Parece que não temos aula por aqui no momento volte mais tarde!</div>
+                        <?php else: ?>
+                             <!----- CARREGA PAGINA E CHAT AULA EXTRA---->
+                                <div class="container-fluid ">
+                                    <div class="aulas row d-flex ">
+                                        <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
+                                            <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
+                                                <iframe class="embed-responsive-item" src=<?php echo $aulaextra["link"]?>></iframe>
+                                            </div>
+                                        </div>
+                                        <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
+                                            <div class="row">
+                                                <div class="alert alert-primary col-12 mt-auto" role="alert">
+                                                Utilize o chat para <strong>Perguntas</strong>
+                                                </div>
+                                            </div>
+
+                                            <div class="row chat" id="row-chat">
+                                                <div id="caixa-chat" style="overflow-y:scroll; width:100%;">
+                                                    <div id="chat">
+                                                    <!-- LOCAL ONDE VAI CHAMAR O CHAT -->
+                                                    </div>
+                                                </div>
+
+                                                <div style="margin-top: 10px;">
+                                                    <input type="text" id="nome" name="nome" value="<?php echo $_SESSION["User"]["nome"]; ?>" disabled="">
+                                                    <textarea maxlength="100" id="mensagem" name="mensagem" placeholder="Insira uma mensagem"></textarea>
+                                                    <button id="cad-msg" type="button" class="btn btn-primary">Enviar Pergunta</button>
+                                                </div>
+                                            </div>               
+                                        </div>
+                                    </div>
+                                </div>
+
+                        <?php endif; ?>
+
+                    <?php else: ?>
+                        <!----- CARREGA PAGINA E CHAT AULA MEDICINA ---->
+                        <div class="container-fluid ">
+                            <div class="aulas row d-flex ">
+                                <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
+                                    <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
+                                        <iframe class="embed-responsive-item" src=<?php echo $aulacfo["link"]?>></iframe>
+                                    </div>
+                                </div>
+                                <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
+                                    <div class="row">
+                                        <div class="alert alert-primary col-12 mt-auto" role="alert">
+                                        Utilize o chat para <strong>Perguntas</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="row chat" id="row-chat">
+                                        <div id="caixa-chat" style="overflow-y:scroll; width:100%;">
+                                            <div id="chat">
+                                            <!-- LOCAL ONDE VAI CHAMAR O CHAT -->
+                                            </div>
+                                        </div>
+
+                                        <div style="margin-top: 10px;">
+                                            <input type="text" id="nome" name="nome" value="<?php echo $_SESSION["User"]["nome"]; ?>" disabled="">
+                                            <textarea maxlength="100" id="mensagem" name="mensagem" placeholder="Insira uma mensagem"></textarea>
+                                            <button id="cad-msg" type="button" class="btn btn-primary">Enviar Pergunta</button>
+                                        </div>
+                                    </div>               
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <?php endif; ?>      
+                <?php endif; ?>
+            <?php else: ?>
+                <div class="alert alert-warning" role="alert">
+                            Que Pena, não identificamos seu pagamento desse mês, Procure a secretaria para regularizar a situação</div>
+
+            <?php endif;?>
+
+
+
+
+
+        <!-- CARREGA FOOTER ---------------------------------------------->
+                         <!-- ##### Footer Area Start ##### -->
+                <footer class="footer-area">
+                    <!-- Top Footer Area -->
+                    <div class="top-footer-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <!-- Footer Logo -->
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="/res/site/img/logo-footer.png" alt=""></a>
+                                    </div>
+                                    <!-- Copywrite -->
+                                    <p><a href="#">
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tdoso | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Bottom Footer Area -->
-        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                <a href="#"><span>Email:</span> info@clever.com</a>
-            </div>
-            <!-- Follow Us -->
-            <div class="follow-us">
-                <span>Follow us</span>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </footer>
-    <!-- ##### Footer Area End ##### -->
+                    <!-- Bottom Footer Area -->
+                    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+                        <!-- Contact Info -->
+                        <div class="contact-info">
+                            <a href="#"><span>Phone:</span> +44 300 303 0266</a>
+                            <a href="#"><span>Email:</span> info@clever.com</a>
+                        </div>
+                        <!-- Follow Us -->
+                        <div class="follow-us">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </footer>
+              <!-- ##### Footer Area End ##### -->
 
-    
+    <?php endif; ?>
+	
+  
 
         <script src="/res/site/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="/res/site/node_modules/plugins/active.js"></script>
  
-      <script src="/res/site/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="/res/site/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         
         <script>
             $(document).ready(function(){
                 $('.owl-carousel').owlCarousel();
             });
         </script>
-
-    
-
-
-
-	<?php endif; ?>
-
 </body>
 </html>

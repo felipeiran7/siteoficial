@@ -3,7 +3,7 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    Lista de Usuarios Ativos do Site
+    Lista de Aulas Extra
   </h1>
   <ol class="breadcrumb">
     <li><a href="/admin"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -18,40 +18,27 @@
   	<div class="col-md-12">
   		<div class="box box-primary">
             
+            <div class="box-header">
+              <a href="/admin/alunos/create" class="btn btn-success">Cadastrar Aula</a>
+            </div>
 
             <div class="box-body no-padding">
               <table class="table table-striped">
                 <thead>
                   <tr>
-                    <th>Nome</th>
-                    <th>Cpf</th>
-                    <th>Email</th>
-                    <th>Instagram</th>
                     <th>Turma</th>
-                    <th>Turma Extra</th>
-                    <th style="width: 60px">Unidade</th>
-                    <th>Pago</th>
-                    <th>Senha</th>
-                    <th style="width: 140px">&nbsp;</th>
+                    <th>Link</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {loop="$users"}
                   <tr>
-                    <td>{$value.nome}</td>
-                    <td>{$value.cpf}</td>
-                    <td>{$value.email}</td>
-                    <td>{$value.instagram}</td>
-                    <td>{$value.turma}</td>
-                    <td>{$value.turmaextra}</td/>
-                    <td>{$value.unidade}</td/>
-                    <td>{$value.pago}</td/>
-                    <td>{$value.senha}</td/>
+                    <td>{$turma}</td>
+                    <td>{$link}</td>
                     <td>
-                      <a href="/admin/usuarios/{$value.cpf}" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Editar</a>
+                      <a href="/admin/aula/extra/editar/{$turma}" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Editar</a>
+                      <a href="/admin/aula/extra/delete" onclick="return confirm('Deseja realmente excluir esta aula?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
                     </td>
                   </tr>
-                  {/loop}
                 </tbody>
               </table>
             </div>

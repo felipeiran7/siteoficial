@@ -26,8 +26,12 @@
                     <th>Nome</th>
                     <th>Cpf</th>
                     <th>Email</th>
+                    <th>Instagram</th>
                     <th>Turma</th>
+                    <th>Turma Extra</th>
                     <th style="width: 60px">Unidade</th>
+                    <th>Pago</th>
+                    <th>Senha</th>
                     <th style="width: 140px">&nbsp;</th>
                   </tr>
                 </thead>
@@ -37,8 +41,12 @@
                     <td><?php echo htmlspecialchars( $value1["nome"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
                     <td><?php echo htmlspecialchars( $value1["cpf"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
                     <td><?php echo htmlspecialchars( $value1["email"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
+                    <td><?php echo htmlspecialchars( $value1["instagram"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
                     <td><?php echo htmlspecialchars( $value1["turma"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
+                    <td><?php echo htmlspecialchars( $value1["turmaextra"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td/>
                     <td><?php echo htmlspecialchars( $value1["unidade"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td/>
+                    <td><?php echo htmlspecialchars( $value1["pago"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td/>
+                    <td><?php echo htmlspecialchars( $value1["senha"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td/>
                     <td>
                       <a href="/admin/usuarios/<?php echo htmlspecialchars( $value1["cpf"], ENT_COMPAT, 'UTF-8', FALSE ); ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Editar</a>
                     </td>

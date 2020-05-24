@@ -21,6 +21,16 @@
     <link rel="stylesheet" href="/res/site/css/ionicons.min.css">
     <link rel="stylesheet" href="/res/site/css/flaticon.css">
     <link rel="stylesheet" href="/res/site/css/icomoon.css">
+    <script type="text/javascript">
+    window.onbeforeunload= function(){
+        $.ajax({
+            url:'setaoffline.php?stats=offline',
+            method: 'GET'
+        });
+    }
+
+
+</script>
      
 
     

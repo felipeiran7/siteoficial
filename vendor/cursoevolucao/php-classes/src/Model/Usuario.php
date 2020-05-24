@@ -18,6 +18,10 @@ class Usuario extends Model
 	protected $turma;
 	protected $unidade;
 	protected $senha;
+	protected $turmaextra;
+	protected $pago;
+	protected $stats;
+	protected $in_aula;
 
 	const SESSION= "User";
 	const SECRET = "Usuario_Secret_C";
@@ -43,7 +47,7 @@ class Usuario extends Model
 	  			if(count($result2)>0){
 	  				throw new \Exception("CPF informado já está cadastrado como usuário");	
 	  			}else if(count($result2)===0){
-	  					$result3= $sql->select("CALL save_return_usuario(:nome,:cpf,:email,:instagram,:turma,:unidade,:senha)", array(
+	  					$result3= $sql->select("CALL save_return_usuario(:nome,:cpf,:email,:instagram,:turma,:unidade,:senha,:turmaextra,:pago,:stats,:in_aula)", array(
   							":nome"=>$dados["nome"],
   							":cpf"=>$this->getcpf(),
   							":email"=>$this->getemail(),
@@ -51,6 +55,10 @@ class Usuario extends Model
   							":turma"=>$dados["turma"],
   							":unidade"=>$dados["unidade"],
   							":senha"=>$this->getsenha(),
+  							":turmaextra"=>1,
+  							":pago"=>1,
+  							":stats"=>"offline",
+  							":in_aula"=>"NOT"
   						));
 
   					$this->setData($result3[0]);
@@ -64,19 +72,56 @@ class Usuario extends Model
 
     		if(count($result)===0){
   			   throw new \Exception("Usuario inexistente ou senha inválida");	
-		    }
-
-		    $dados= $result[0];
-
-		    if($password == $dados["senha"]){
-			     $usuario = new Usuario();
-			     $usuario-> setData($dados);
-			     $_SESSION[Usuario::SESSION]= $usuario->getValues();
-			     return $usuario;
 		    }else{
-			   throw new \Exception("Usuario inexistente ou senha inválida");
+
+		    	$dados= $result[0];
+
+		    	if($dados["stats"]=="offline"){
+		    		if($password == $dados["senha"]){
+
+		    		 $sql->query("UPDATE tb_usuarios SET stats=:stats WHERE cpf=:cpf", array("stats"=>"online","cpf"=>$dados["cpf"]));
+				     $usuario = new Usuario();
+				     $usuario-> setData($dados);
+				     $_SESSION[Usuario::SESSION]= $usuario->getValues();
+				     return $usuario;
+
+		    		}else{
+			   			throw new \Exception("Usuario inexistente ou senha inválida");
+		   		 	}
+		    	}else{
+		    		throw new \Exception("Você já tem uma sessão ativa em outro local, saia de outro dispositivo para
+		    			continuar");
+		    	}  	
 		    }
-	  	}
+		}
+
+
+
+	  	public function delete(){
+	  		$sql=  new Sql();
+	  		$result= $sql->query("DELETE FROM tb_usuarios WHERE cpf=:cpf", array(
+	  			":cpf"=>$this->getcpf(),
+	  		));
+  		}
+
+	  	public function atualiza(){
+	  		$sql=  new Sql();
+	  		$result= $sql->select("CALL update_usuario_admin(:nome,:cpf,:email,:instagram,:turma,:unidade,:senha,:turmaextra,:pago)", array(
+	  			":nome"=>$this->getnome(),
+	  			":cpf"=>$this->getcpf(),
+	  			":email"=>$this->getemail(),
+	  			":instagram"=>$this->getinstagram(),
+	  			":turma"=>$this->getturma(),
+	  			":unidade"=>$this->getunidade(),
+	  			":senha"=>$this->getsenha(),
+	  			":turmaextra"=>(int)$this->getturmaextra(),
+	  			":pago"=>(int)$this->getpago()
+
+	  		));
+
+	  		$this->setData($result[0]);
+
+  		}
 
 
 	    public static function verifyLogin(){
@@ -105,6 +150,9 @@ class Usuario extends Model
 
 
 	  	public static function logout(){
+	  		$sql=  new Sql();
+	  		$cpf= $_SESSION[Usuario::SESSION]["cpf"];
+      		$sql->query("UPDATE tb_usuarios SET stats=:stats WHERE cpf=:cpf", array("stats"=>"offline","cpf"=>$cpf));
       		$_SESSION[Usuario::SESSION]= NULL;
       		session_destroy();
    	    }

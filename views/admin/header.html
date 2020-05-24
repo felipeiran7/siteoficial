@@ -276,7 +276,8 @@ desired effect
           </a>
           <ul class="treeview-menu">
             <li><a href="/admin/cadastro/aula/turmamed">Turma Medicina</a></li>
-            <li><a href="/admin/usuarios">Turma CFO</a></li>
+            <li><a href="/admin/cadastro/aula/turmacfo">Turma CFO</a></li>
+            <li><a href="/admin/cadastro/aula/turmaextra">Aula Especial</a></li>
           </ul>
         </li>
 
