@@ -14,13 +14,7 @@
     <!-------------------- css site ------------------------------------>
     <link rel="stylesheet" href="/res/site/css/flaticon.css">
     <link rel="stylesheet" href="/res/site/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/res/site/css/magnific-popup.css">
-    <link rel="stylesheet" href="/res/site/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="/res/site/css/animate.css">
-    <link rel="stylesheet" href="/res/site/css/aos.css">
-    <link rel="stylesheet" href="/res/site/css/ionicons.min.css">
-    <link rel="stylesheet" href="/res/site/css/flaticon.css">
-    <link rel="stylesheet" href="/res/site/css/icomoon.css">
+
     <script type="text/javascript">
     window.onbeforeunload= function(){
         $.ajax({

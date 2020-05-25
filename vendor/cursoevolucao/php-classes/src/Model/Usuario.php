@@ -164,7 +164,7 @@ class Usuario extends Model
 	  			":email"=>$email));
 
 	  		if(count($results)===0){
-	  			throw new \Exception("Não foi possível recuperar a senha");
+	  			throw new \Exception("Não foi possível recuperar a senha, email não encontrado");
 	  			
 	  		}else{
 	  			$data= $results[0];
@@ -199,10 +199,11 @@ class Usuario extends Model
 
 			$sql= new Sql();
 
+			
+
 			$results= $sql->select("SELECT *FROM tb_usuarios_recovery a INNER JOIN tb_usuarios b USING(cpf) WHERE a.idrecovery=:idrecovery  and a.dtrecovery is null and
-			DATE_ADD(dtregister, INTERVAL 1 HOUR) >= NOW()",array(":idrecovery"=>$idrecovery));
-	  			
-	  	
+			DATE_ADD(dtregister, INTERVAL 2 HOUR) >= NOW()",array(":idrecovery"=>$idrecovery));
+
 			if(count($results)===0){
 				throw new \Exception("Não foi possivel recuperar a senha");
 				

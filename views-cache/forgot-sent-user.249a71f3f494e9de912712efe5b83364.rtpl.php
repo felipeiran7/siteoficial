@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Reset Password</title>
+  <title>Curso Evolução | Recuperação de Senha</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -26,20 +26,20 @@
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper">
   <div class="lockscreen-logo">
-    <a href="/res/admin/index2.html"><b>Admin</b>LTE</a>
+    <a href="/res/admin/index2.html"><b>Curso</b> Evolução</a>
   </div>
 
   <!-- /.lockscreen-item -->
   <div class="help-block text-center">
     <div class="callout callout-success">
-      <h4>E-mail enviado!</h4>
+      <h4>E-mail enviado !</strong></h4>
 
       <p>Verifique as instruções no seu e-mail.</p>
     </div>
   </div>
   <div class="lockscreen-footer text-center">
-    Copyright &copy; 2014-2016 <b><a href="http://almsaeedstudio.com" class="text-black">Almsaeed Studio</a></b><br>
-    All rights reserved
+    Copyright &copy; <b><a href="http://almsaeedstudio.com" class="text-black">7Online Agência</a></b><br>
+    Todos os direitos reservados
   </div>
 </div>
 <!-- /.center -->

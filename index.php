@@ -62,7 +62,7 @@ $app->post('/cadastro/aluno', function(){
 	try{
 		$user->insert($_POST);
 		Usuario::login($_POST["cpf"],$_POST["senha"]);
-		header("Location: /");
+		header("Location: /success");
 	}catch(Exception $e){
 		$page= new Page();
 		$error= $e->getMessage();
@@ -73,6 +73,15 @@ $app->post('/cadastro/aluno', function(){
 });
 
 //==============================================================================
+
+$app->get('/success', function(){
+    if(isset($_SESSION["User"])){
+        $page= new Page();
+        $page->setTpl("welcome");
+    }
+    exit;
+
+});
 
 
 //CARREGA PAGINA INICIAL ====================================================
@@ -159,9 +168,17 @@ $app->get("/usuario/forgot", function(){
 //ENVIA DADOS PARA PAGINA DE RECUPERACAO===========================================================
 
 $app->post("/usuario/forgot", function(){
-	$user= Usuario::getForgot($_POST["email"]);
-	header("Location: /usuario/forgot/sent");
-	exit;
+    try{
+        $user= Usuario::getForgot($_POST["email"]);
+        header("Location: /usuario/forgot/sent");
+        exit;
+    }catch(Exception $e){
+        $page= new Page();
+        $error= $e->getMessage();
+        $page->setTpl("inicial", ["error"=>$error]);
+        exit;
+    }
+    exit;
 });
 
 //=====================================================================================================

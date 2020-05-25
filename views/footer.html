@@ -42,16 +42,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
         <script src="/res/site/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="/res/site/node_modules/plugins/active.js"></script>
         <script src="/res/site/js/js-temp/jquery.easing.1.3.js"></script>
-      <script src="/res/site/js/js-temp/jquery.waypoints.min.js"></script>
-      <script src="/res/site/js/js-temp/jquery.stellar.min.js"></script>
       <script src="/res/site/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-      <script src="/res/site/js/js-temp/jquery.magnific-popup.min.js"></script>
-      <script src="/res/site/js/js-temp/aos.js"></script>
-      <script src="/res/site/js/js-temp/jquery.animateNumber.min.js"></script>
-      <script src="/res/site/js/js-temp/scrollax.min.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-      <script src="/res/site/js/js-temp/google-map.js"></script>
-      <script src="/res/site/js/js-temp/main.js"></script>
         
         <script>
             $(document).ready(function(){

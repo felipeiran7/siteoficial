@@ -9,6 +9,10 @@ $_SESSION["Aula"]= '';
 
  ?>
 
+ <?php if(!isset($_SESSION["User"]) || !$_SESSION["User"]): ?>
+                <p>voce precisa ta logado para ve isso</p>
+<?php else: ?>
+
 
 
 <!DOCTYPE html>
@@ -40,6 +44,7 @@ $_SESSION["Aula"]= '';
     <link rel="stylesheet" href="/res/site/css/ionicons.min.css">
     <link rel="stylesheet" href="/res/site/css/flaticon.css">
     <link rel="stylesheet" href="/res/site/css/icomoon.css">
+    
 
     <?php include "scripts.php"; ?>
 
@@ -61,12 +66,12 @@ $_SESSION["Aula"]= '';
 
 	</script>
 
-	    <script data-cfasync="false">
+	  <!-- <script data-cfasync="false">
                 (function(r,e,E,m,b){E[r]=E[r]||{};E[r][b]=E[r][b]||function(){
                 (E[r].q=E[r].q||[]).push(arguments)};b=m.getElementsByTagName(e)[0];m=m.createElement(e);
                         m.async=1;m.src=("file:"==location.protocol?"https:":"")+"//s.reembed.com/G-AM254X.js";
                         b.parentNode.insertBefore(m,b)})("reEmbed","script",window,document,"api");
-        </script> 
+        </script> -->
 
      <script type="text/javascript">
      	$(document).ready(function() {
@@ -89,9 +94,6 @@ $_SESSION["Aula"]= '';
 <!--ESTE ONLOAD AJAX É PARA ASSIM QUE A PÁGINA ABRIR ELE JÁ CARERGAR AS INFORMAÇÕES, SEM TER QUE ESPERAR 1 SEGUNDO PARA ISSO -->
 
 <body onload="ajax();" onLoad="scroll();">
-	<?php if(!isset($_SESSION["User"]) || !$_SESSION["User"]): ?>
-				<p>voce precisa ta logado para ve isso</p>
-	<?php else: ?>
 
 		<?php
             //ATUALIZA SESSÃO DO USUARIO SE FIZER ALTERACOES NO BANCO
@@ -167,8 +169,9 @@ $_SESSION["Aula"]= '';
                                 <div class="container-fluid ">
                                     <div class="aulas row d-flex ">
                                         <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
-                                            <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
-                                                <iframe class="embed-responsive-item" src=<?php echo $aulaextra["link"]?>></iframe>
+                                            <div  class="embed-responsive embed-responsive-16by9" style="pointer-events: none;">
+                                                <?php include "carregaextra.php"; ?>
+                                                <div id="player"></div>
                                             </div>
                                         </div>
                                         <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
@@ -202,8 +205,9 @@ $_SESSION["Aula"]= '';
                         <div class="container-fluid ">
                             <div class="aulas row d-flex ">
                                 <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
-                                    <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
-                                        <iframe class="embed-responsive-item" src=<?php echo $aulamed["link"]?>></iframe>
+                                    <div class="embed-responsive embed-responsive-16by9" style="pointer-events: none;">
+                                        <?php include "carregamedicina.php"; ?>
+                                        <div id="player"></div>
                                     </div>
                                 </div>
                                 <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
@@ -243,8 +247,9 @@ $_SESSION["Aula"]= '';
                                 <div class="container-fluid ">
                                     <div class="aulas row d-flex ">
                                         <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
-                                            <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
-                                                <iframe class="embed-responsive-item" src=<?php echo $aulaextra["link"]?>></iframe>
+                                            <div  class="embed-responsive embed-responsive-16by9" style="pointer-events: none;">
+                                                <?php include "carregaextra.php"; ?>
+                                                <div id="player"></div>
                                             </div>
                                         </div>
                                         <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
@@ -278,8 +283,9 @@ $_SESSION["Aula"]= '';
                         <div class="container-fluid ">
                             <div class="aulas row d-flex ">
                                 <div id="corpo-frame" class="corpo-frame col-12 mb-0 col-md-12 col-lg-12 col-xl-9">
-                                    <div  class="embed-responsive embed-responsive-30by9" style="pointer-events: none;">
-                                        <iframe class="embed-responsive-item" src=<?php echo $aulacfo["link"]?>></iframe>
+                                    <div  class="embed-responsive embed-responsive-16by9" style="pointer-events: none;">
+                                        <?php include "carregacfo.php"; ?>
+                                        <div id="player"></div>
                                     </div>
                                 </div>
                                 <div id="corpo-chat" class="body-chat col-12 col-md-12 col-lg-12 col-xl-3">
