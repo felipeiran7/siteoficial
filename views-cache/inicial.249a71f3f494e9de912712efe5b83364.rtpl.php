@@ -78,7 +78,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading text-bold text-white">Time Qualificado</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Contatmos Com o Melhor Time De Professores do Mercado Para Garantir Sua Aprovação.</p>
               </div>
             </div>      
           </div>
@@ -89,7 +89,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading text-bold text-white">Material Exclusivo</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>Nossos Materiais e Apostilas São Preparadas Exclusivamente Por Nossa Equipe de Educadores.</p>
               </div>
             </div>    
           </div>
@@ -100,7 +100,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading text-bold text-white">Anos de Tradição</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p> O Mais Tradicional da Cidade Com +18 Anos de tradição No Mercado, Com Milhares De Aprovados.</p>
               </div>
             </div>      
           </div>
@@ -111,7 +111,7 @@
               </div>
               <div class="media-body p-2 mt-3">
                 <h3 class="heading text-bold text-white">Maior Estrutura</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                <p>03 Unidades Equipadas Com a Melhor e Maior Estrutura Entre Pré-Vestibulares do MA.</p>
               </div>
             </div>      
           </div>
@@ -122,7 +122,7 @@
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 
-<section  class="historia">
+<section   class="historia">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
@@ -130,14 +130,14 @@
           </div>
           <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
             <h2 class="mb-4">Ainda Não Estuda Com a Gente?</h2>
-            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
+            <p>Você, aluno de fora que ainda não conhece todas as vantagens de ser aluno Evolução, vamos te apresentar algumas delas:</p>
             <div class="row mt-5">
               <div class="col-lg-6">
                 <div class="services-2 d-flex">
                   <div class="icon mt-2 d-flex justify-content-center align-items-start"><img src="/res/site/img/sala-de-aula.png"></div>
                   <div class="text pl-3">
                     <h3>Salas de Estudo</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p>Todas Nossas Unidades Possuem Salas de Estudo Climátizadas e Equipadas para Você Se Preparar da Melhor Forma.</p>
                   </div>
                 </div>
               </div>
@@ -146,7 +146,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-start"><img src="/res/site/img/turmas-exclusivas.png"></div>
                   <div class="text pl-3">
                     <h3>Turmas Exclusivas</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p>Você que deseja se preparar tanto para o Enem,Uema e outros vestibulares do Brasil temos turmas de preparação exclusivas .</p>
                   </div>
                 </div>
               </div>
@@ -155,7 +155,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="/res/site/img/clima.png"></div>
                   <div class="text pl-3">
                     <h3>Salas Climátizadas</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p>Todas as Unidades Possuem Ambiente Climátizado e Espaço Para Garantir o Seu Conforto.</p>
                   </div>
                 </div>
               </div>
@@ -164,7 +164,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="/res/site/img/predio.png"></div>
                   <div class="text pl-3">
                     <h3>Estrutura Incrível</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p>São 3 Unidades Com Salas Incríveis, Microondas, Lanchonete, Salas de Estudo.</p>
                   </div>
                 </div>
               </div>
@@ -173,7 +173,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="/res/site/img/resultados.png"></div>
                   <div class="text pl-3">
                     <h3>Resultados Comprovados</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p>Ao Longo De Nossa História São Milhares de Aprovações Em Universidades de Todo Brasil e Exterior.</p>
                   </div>
                 </div>
               </div>
@@ -182,7 +182,7 @@
                   <div class="icon mt-2 d-flex justify-content-center align-items-center"><img src="/res/site/img/desconto.png"></div>
                   <div class="text pl-3">
                     <h3>Descontos Exclusivos</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    <p>Você Aluno De Fora de Escolas Públicas e Escolas Conveniadas Possui Descontos Exclusivos Com a Gente. Entre em Contato!</p>
                   </div>
                 </div>
               </div>
@@ -209,8 +209,8 @@
           </div>
           <div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
             <h2 class="mb-4">Um Pouco Da Nossa História...</h2>
-            <p class="text-bold">Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p class="text-bold">Há 20 anos atrás, em uma sala pequena próxima ao elevado da Cohama, surgia o curso a partir do sonho dos professores Antônio José, Marquesluís e Rachel. De lá para cá, foram várias conquistas até nos tornarmos um dos cursos pré-vestibulares mais tradicionais do estado.</p>
+            <p>Nosso maior orgulho é poder ajudar a escrever a história de vários alunos e ter participado de suas conquistas. E queremos continuar nesse caminho, participando das conquistas de nossos alunos.</p>
           </div>
         </div>  
         <div class="row d-md-flex align-items-center justify-content-center">
@@ -220,8 +220,8 @@
                 <div class="block-18">
                   <div class="icon"><span class="flaticon-doctor"></span></div>
                   <div class="text">
-                    <strong class="number" data-number="18">18</strong>
-                    <span>Certified Teachers</span>
+                    <strong class="number" data-number="18">+18</strong>
+                    <span>Anos de tradição</span>
                   </div>
                 </div>
               </div>
@@ -229,8 +229,8 @@
                 <div class="block-18">
                   <div class="icon"><span class="flaticon-doctor"></span></div>
                   <div class="text">
-                    <strong class="number" data-number="401">+1000</strong>
-                    <span>Students</span>
+                    <strong class="number" data-number="401">03</strong>
+                    <span>Unidades</span>
                   </div>
                 </div>
               </div>
@@ -238,8 +238,8 @@
                 <div class="block-18">
                   <div class="icon"><span class="flaticon-doctor"></span></div>
                   <div class="text">
-                    <strong class="number" data-number="30">03</strong>
-                    <span>Courses</span>
+                    <strong class="number" data-number="30">∞</strong>
+                    <span>aprovações</span>
                   </div>
                 </div>
               </div>
@@ -247,8 +247,8 @@
                 <div class="block-18">
                   <div class="icon"><span class="flaticon-doctor"></span></div>
                   <div class="text">
-                    <strong class="number" data-number="50">0</strong>
-                    <span>Awards Won</span>
+                    <strong class="number" data-number="50">06</strong>
+                    <span>Turmas Regulares</span>
                   </div>
                 </div>
               </div>
@@ -275,19 +275,20 @@
                           <!-- Wrapper for carousel items -->
                             <div class="carousel-inner">
                                 <div class="item carousel-item active">
-                                  <div class="img-box"><img src="/res/site/img/teacher-1.jpg" alt=""></div>
-                                  <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                                  <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                                  <div class="img-box"><img src="/res/site/img/carlos.jpg" alt=""></div>
+                                  <p class="testimonial">Boa noite Meu nome é CLAUDETE sou mãe de CARLOS QUARESMA, aluno deste tão conceituado CURSO EVOLUÇÃO. Neste momento meu sentimento é de gratidão a Deus p Vitória do meu filho VESTIBULAR MEDICINA, e segundo lugar ao professor MARQUES que acreditou no sonho objetivo de meu filho e abriu as portas do CURSO EVOLUÇÃO p ele investir no seu sonho ganhar e adquirir conhecimento para q hoje ele junto com todos ds família e amigos podessemos compartilhar junto à ele este momento unico de felicidade.</p>
+                                  <p class="overview"><b>Carlos Quaresma</b>, Medicina UFMA e UEMA</p>
                                 </div>
                                 <div class="item carousel-item">
-                                  <div class="img-box"><img src="/res/site/img/teacher-2.jpg" alt=""></div>
-                                  <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                                  <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                                  <div class="img-box"><img src="/res/site/img/denise.jpg" alt=""></div>
+                                  <p class="testimonial">O GRITO DE 5 ANOS!
+                                    Denise Carvalho, “MURI” de muriçoca, uma das melhores alunas do colégio @upaon_oficial, só que “esqueceu” de passar de primeira. Matriculou-se no evolução só para confirmar que uma vaga de medicina seria sua e rápido.Isso foi em 2015, de lá pra cá ela teve que aprender a recomeçar, mas ao longo desses infindáveis 5 anos ela sempre foi muito voluntariosa com os amigos, com a família, com a igreja e com sua fé. Denise foi aprovada em 2020 após 5 ANOS de luta </p>
+                                                                      <p class="overview"><b>Denise Carvalho</b>, Medicina UFMA</p>
                                 </div>
                                 <div class="item carousel-item">
-                                  <div class="img-box"><img src="/res/site/img/teacher-3.jpg" alt=""></div>
-                                  <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                  <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                  <div class="img-box"><img src="/res/site/img/marcos.jpg" alt=""></div>
+                                  <p class="testimonial">Desde 2017, depois de 3 anos formado em Engenharia Mecânica sem a tão esperada promoção, a estabilidade de uma carreira pública despertou a atenção de Marcos. Na época ele trabalhava há 7 anos numa empresa privada com benefícios como plano de saúde e vale alimentação, Mas deciciu largar tudo e se matricular no Evolução em busca da estabilidade de uma carreira pública. Em 2020 Marcos foi aprovado para o CFO-BM UEMA</p>
+                                  <p class="overview"><b>Marcos Almeida</b>, CFO-BM</p>
                                 </div>
                             </div>
                             <!-- Carousel controls -->
@@ -347,7 +348,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="section-heading">
-                            <h3>O melhor time da cidade</h3>
+                            <h3>O Melhor Time da Cidade</h3>
                         </div>
                     </div>
                 </div>
@@ -362,11 +363,11 @@
                                 </div>
                                 <!-- Tutor Information -->
                                 <div class="tutor-information text-center">
-                                    <h5>Alex Parker</h5>
-                                    <span>Teacher</span>
+                                    <h5>Arnaldo Gomes</h5>
+                                    <span>Língua Portuguesa</span>
                                     <div class="social-info">
                                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/arnaldogomes13"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -380,11 +381,11 @@
                                 </div>
                                 <!-- Tutor Information -->
                                 <div class="tutor-information text-center">
-                                    <h5>Alex Parker</h5>
-                                    <span>Teacher</span>
+                                    <h5>Marco Rodrigues</h5>
+                                    <span>Filosofia</span>
                                     <div class="social-info">
                                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/marcorodriguesfilosofo"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -398,11 +399,11 @@
                                 </div>
                                 <!-- Tutor Information -->
                                 <div class="tutor-information text-center">
-                                    <h5>Alex Parker</h5>
-                                    <span>Teacher</span>
+                                    <h5>Antonio José</h5>
+                                    <span>Matemática</span>
                                     <div class="social-info">
                                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -416,11 +417,11 @@
                                 </div>
                                 <!-- Tutor Information -->
                                 <div class="tutor-information text-center">
-                                    <h5>Alex Parker</h5>
-                                    <span>Teacher</span>
+                                    <h5>Marquesluís</h5>
+                                    <span>Química</span>
                                     <div class="social-info">
                                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/marquesluiscarvalho"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -434,11 +435,267 @@
                                 </div>
                                 <!-- Tutor Information -->
                                 <div class="tutor-information text-center">
-                                    <h5>Alex Parker</h5>
-                                    <span>Teacher</span>
+                                    <h5>Saul Filho</h5>
+                                    <span>Geografia</span>
                                     <div class="social-info">
                                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/saul.filho"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                             <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t6.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Daniel Oliveira</h5>
+                                    <span>Química</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/danieloliveira_qui"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t7.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Madson Matos</h5>
+                                    <span>Biologia</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/madson_biologia"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t8.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Thayná Rosa</h5>
+                                    <span>Sociologia</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/profthaynarosa"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t9.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Lízia Adriane</h5>
+                                    <span>Língua Portuguesa</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/liziaadrianemagno"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t10.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>André Ricardo</h5>
+                                    <span>Física</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/aandrefisica"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t11.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Viera Novais</h5>
+                                    <span>Física</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t12.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Halneik Pontes</h5>
+                                    <span>Matemática</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/halmtmfsc"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t13.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Getúlio Bessa</h5>
+                                    <span>História</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t14.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Gláucio Carlos</h5>
+                                    <span>Geografia</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/glauciocarlos"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t15.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Eliomar</h5>
+                                    <span>Redação</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/eliocat"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t16.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Paulo Gereba</h5>
+                                    <span>História</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t17.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Joadyson Lago</h5>
+                                    <span>Física</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t18.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Artur Góes</h5>
+                                    <span>Redação</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t19.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Milton</h5>
+                                    <span>Língua Estrangeira</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Single Tutors Slide -->
+                              <div class="single-tutors-slides">
+                                <!-- Tutor Thumbnail -->
+                                <div class="tutor-thumbnail">
+                                    <img src="/res/site/img/t20.png" alt="">
+                                </div>
+                                <!-- Tutor Information -->
+                                <div class="tutor-information text-center">
+                                    <h5>Marilda</h5>
+                                    <span>Língua Estrangeira</span>
+                                    <div class="social-info">
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                         <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
@@ -450,22 +707,83 @@
             </div>
         </section>
 
-        <hr>
-        <hr>
-        <hr>
-        <hr>
+       
 
-        <div class="container justify-content-center mb-0">
-           <div class="section-heading">
-                            <i class="fa fa-instagram"></i><h5>Últimos Posts do Instagram</h5>
-                        </div>
-          <div class="row">
-            <div class="col-12">
-          
-               <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/8e93bc07442654068146ad196500124d.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+
+    <!--================ Start Events Area =================-->
+    <div id= "turmas" class="events_area mt-5 " style="background-color: #044d82;">
+      <div class="container"  style="background-color: #044d82;">
+        <div class="row justify-content-center">
+          <div class="col-lg-5">
+            <div class="main_title">
+              <h2 class="mb-3 text-white">Conheça Nossas Turmas</h2>
+              <p class="text-white">
+                Conquiste Sua Tão Sonhada Vaga na Universidade.
+              </p>
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="single_event position-relative">
+              <div class="event_thumb">
+                <img src="res/site/img/e1.png" alt="" />
+              </div>
+              <div class="event_details">
+                <div class="d-flex mb-4">
+                  <div class="date"><span>03</span>Unid.</div>
+
+                  <div class="time-location">
+                    <p>
+                     <h2>Turma Cfo-Enem</h2> 
+                    </p>
+                    <p>
+                      <span class="ti-location-pin mr-2"></span> 15:00 - 18:30 (Vespertino)
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Turma voltada para alunos que desejam seguir a carreira
+                  militar mas sem abrir mão do vestibular tradicional, garantindo a preparação simultânea para UEMA e ENEM.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="single_event position-relative">
+              <div class="event_thumb">
+                <img src="res/site/img/e2.jpg" alt="" />
+              </div>
+              <div class="event_details">
+                <div class="d-flex mb-4">
+                  <div class="date"><span>03</span>Unid.</div>
+
+                  <div class="time-location">
+                    <p>
+                      <h2>Turma Medicina</h2> 
+                    </p>
+                    <p>
+                      <span class="ti-location-pin mr-2"></span> 07:30 - 12:40 (Matutino)
+                    </p>
+                  </div>
+                </div>
+                <p>
+                  Turma intensiva voltada para alunos que desejam concretizar o sonho de estudar medicina.
+                  Com carga horária extensa e preparação específica, sua vaga estará garantida.
+                </p>
+              
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+    <!--================ End Events Area =================-->
+
 
 
       

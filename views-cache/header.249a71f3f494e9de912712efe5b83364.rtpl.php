@@ -40,8 +40,8 @@
                 <!-- Follow Us -->
                 <div class="follow-us">
                     <span>Siga-nos:</span>
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://facebook.com/curso.evolucao"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -58,13 +58,13 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav mr-auto ml-auto" id="menu-items">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>    
+                            <a href="/" class="nav-link">Home</a>    
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Turmas</a>    
+                            <a href="#turmas" class="nav-link">Turmas</a>    
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Quem somos</a>    
+                            <a href="#section-counter" class="nav-link">Quem somos</a>    
                         </li>
                     </ul>
 

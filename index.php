@@ -62,7 +62,7 @@ $app->post('/cadastro/aluno', function(){
 	try{
 		$user->insert($_POST);
 		Usuario::login($_POST["cpf"],$_POST["senha"]);
-		header("Location: /success");
+		header("Location: /");
 	}catch(Exception $e){
 		$page= new Page();
 		$error= $e->getMessage();

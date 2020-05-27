@@ -12,10 +12,14 @@
       </ol>
     </section>
 
+
     <!-- Main content -->
     <section class="content">
 
-      <!-- Your Page Content Here -->
+       <input type="text" id="stats" name="stats" value="online" disabled="">
+       <input type="text" id="in_aula" name="in_aula" value="YES" disabled="">
+       <button id="btn_online" type="button" class="btn btn-primary">Checar Online</button>
+       <div id="mensagens">Clique para checar a quantidade de alunos online</div>
 
     </section>
     <!-- /.content -->

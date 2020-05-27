@@ -66,12 +66,7 @@ $_SESSION["Aula"]= '';
 
 	</script>
 
-	  <!-- <script data-cfasync="false">
-                (function(r,e,E,m,b){E[r]=E[r]||{};E[r][b]=E[r][b]||function(){
-                (E[r].q=E[r].q||[]).push(arguments)};b=m.getElementsByTagName(e)[0];m=m.createElement(e);
-                        m.async=1;m.src=("file:"==location.protocol?"https:":"")+"//s.reembed.com/G-AM254X.js";
-                        b.parentNode.insertBefore(m,b)})("reEmbed","script",window,document,"api");
-        </script> -->
+	  
 
      <script type="text/javascript">
      	$(document).ready(function() {
@@ -129,10 +124,10 @@ $_SESSION["Aula"]= '';
                             <a href="" class="nav-link">Home</a>    
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Turmas</a>    
+                            <a href="#turmas" class="nav-link">Turmas</a>    
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">Quem somos</a>    
+                            <a href="#section-counter" class="nav-link">Quem somos</a>    
                         </li>
                     </ul>
 
@@ -162,8 +157,11 @@ $_SESSION["Aula"]= '';
                     <?php if($aulamed["link"]=="encerrado"): ?>
                         <?php if($aulaextra["link"]=="encerrado"): ?>
 
-                            <div class="alert alert-warning" role="alert">
+                            <div class="col-12 align-items-center" style="height: 70vh;">
+                                <div class="alert alert-warning text-align-center" role="alert" style="top: 180px;">
                             Opa Parece que não temos aula por aqui no momento volte mais tarde!</div>
+                            </div>
+                            
                         <?php else: ?>
                              <!----- CARREGA PAGINA E CHAT AULA EXTRA---->
                                 <div class="container-fluid ">
@@ -240,8 +238,11 @@ $_SESSION["Aula"]= '';
                         <?php if($aulacfo["link"]=="encerrado"): ?>
                         <?php if($aulaextra["link"]=="encerrado"): ?>
 
-                            <div class="alert alert-warning" role="alert">
+                            <div class="col-12 align-items-center" style="height: 70vh;">
+                                <div class="alert alert-warning text-align-center" role="alert" style="top: 180px;">
                             Opa Parece que não temos aula por aqui no momento volte mais tarde!</div>
+                            </div>
+                            
                         <?php else: ?>
                              <!----- CARREGA PAGINA E CHAT AULA EXTRA---->
                                 <div class="container-fluid ">
@@ -315,8 +316,12 @@ $_SESSION["Aula"]= '';
                     <?php endif; ?>      
                 <?php endif; ?>
             <?php else: ?>
-                <div class="alert alert-warning" role="alert">
-                            Que Pena, não identificamos seu pagamento desse mês, Procure a secretaria para regularizar a situação</div>
+
+                            <div class="col-12 align-items-center" style="height: 70vh;">
+                                <div class="alert alert-warning text-align-center" role="alert" style="top: 180px;">
+                            Que Pena, não identificamos seu pagamento desse mês, Procure a secretaria para regularizar a situação!</div>
+                            </div>
+              
 
             <?php endif;?>
 
@@ -325,42 +330,44 @@ $_SESSION["Aula"]= '';
 
 
         <!-- CARREGA FOOTER ---------------------------------------------->
-                         <!-- ##### Footer Area Start ##### -->
-                <footer class="footer-area">
-                    <!-- Top Footer Area -->
-                    <div class="top-footer-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <!-- Footer Logo -->
-                                    <div class="footer-logo">
-                                        <a href="index.html"><img src="/res/site/img/logo-footer.png" alt=""></a>
-                                    </div>
-                                    <!-- Copywrite -->
-                                    <p><a href="#">
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tdoso | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                                </div>
-                            </div>
+                  <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Top Footer Area -->
+        <div class="top-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="/res/site/img/logo-footer.png" alt=""></a>
                         </div>
+                        <!-- Copywrite -->
+                        <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Feito Por studio 7ONLINE | by <a href="https://instagram.com/7on.line" target="_blank">7online</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Bottom Footer Area -->
-                    <div class="bottom-footer-area d-flex justify-content-between align-items-center">
-                        <!-- Contact Info -->
-                        <div class="contact-info">
-                            <a href="#"><span>Phone:</span> +44 300 303 0266</a>
-                            <a href="#"><span>Email:</span> info@clever.com</a>
-                        </div>
-                        <!-- Follow Us -->
-                        <div class="follow-us">
-                            <span>Follow us</span>
-                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </footer>
-              <!-- ##### Footer Area End ##### -->
+        <!-- Bottom Footer Area -->
+        <div class="bottom-footer-area d-flex justify-content-between align-items-center">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="#"><span>Renascença: </span>(98) 3227-1351</a>
+                <a href="#"><span>Cohama: </span>(98) 3236-0782</a>
+                <a href="#"><span>Cohab: </span>(98) 3225-0538</a>
+            </div>
+            <!-- Follow Us -->
+            <div class="follow-us">
+                <span>Siga-nos</span>
+                <a href="https://www.facebook.com/curso.evolucao"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/curso_evolucao"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
 
     <?php endif; ?>
 	

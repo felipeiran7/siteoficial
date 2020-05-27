@@ -38,7 +38,7 @@
     </div>
   </div>
   <div class="lockscreen-footer text-center">
-    Copyright &copy; <b><a href="http://almsaeedstudio.com" class="text-black">7Online Agência</a></b><br>
+    Copyright &copy; <b><a href="http://instagram.com/7on.line" class="text-black">7Online Agência</a></b><br>
     Todos os direitos reservados
   </div>
 </div>
